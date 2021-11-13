@@ -10,7 +10,7 @@ and try the instructions listed , but the device could not boot as expected.
 
 After more research , I found the following URL which listed another installation process.
 https://forum.doozan.com/read.php?2,12096
-and getting save result which stucks "Starting kernel......"
+and getting same result which stucks "Starting kernel......"
 
 A few hours later , I booted the device successfully as expected ,
 and I found my problem is related to DTS.
