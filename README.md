@@ -61,7 +61,7 @@ My installation process
         mkimage -A arm -O linux -T ramdisk -C gzip -a 0x00000000 -e 0x00000000 -n initramfs-5.13.6-kirkwood-tld-1 -d initrd.img-5.13.6-kirkwood-tld-1 uInitrd<br>
         cat << 'EOF' >> /mnt/etc/fstab<br>
         LABEL=BOOT    /boot   ext2  defaults,noatime  0  0<br>
-        LABEL=rootfs  /       ext2  defaults,noatime  0  0<br>
+        LABEL=rootfs  /       ext4  defaults,noatime  0  0<br>
         EOF<br>  
         cd ~<br>  
         sync #( Make sure the USB drive have written all files instead of memory cache )<br> 
@@ -84,5 +84,5 @@ My installation process
           saveenv<br> 
 6) Power off the device , plug the USB and do not insert any hard drive , <br>and start the device again , if there has no errors , it should boot to the Debian which you installed with the USB drive , <br>you may login the device via ssh with root/root. ( I think you should know to find the IP address with your DHCP or you have already set the static IP address :) , or using the TTL to login to the system )
 
-7) Enjoy ~ ( You may copy the files to hard drive and boot from hard drive , but you should modify your own ENV values. )
+7) Enjoy ~ ( You may copy the files to hard drive and boot from hard drive , but you should modify your own ENV values. I want to keep the NAS drive as simple raid 1 so I just leave the USB as the boot media always. )
         
