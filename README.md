@@ -82,7 +82,7 @@ My installation process
           setenv usb_bootcmd 'run usb_set_bootargs; run usb_boot'<br> 
           setenv bootcmd 'usb reset; run usb_bootcmd; usb stop; reset'<br> 
           saveenv<br> 
-6) Power off the device , plug the USB and do not insert any hard drive , <br>and start the device again , if there has no errors , it should boot to the Debian which you installed with the USB drive , <br>you may login the device via ssh with root/root. ( I think you should know to find the IP address with your DHCP or you have already set the static IP address :))
+6) Power off the device , plug the USB and do not insert any hard drive , <br>and start the device again , if there has no errors , it should boot to the Debian which you installed with the USB drive , <br>you may login the device via ssh with root/root. ( I think you should know to find the IP address with your DHCP or you have already set the static IP address :) , or using the TTL to login to the system )
 
 7) Enjoy ~ ( You may copy the files to hard drive and boot from hard drive , but you should modify your own ENV values. )
         
